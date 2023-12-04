@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "qwaszx45!@",
+    "database": "pros",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "qwaszx45!@",
+    "database": "pros",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "qwaszx45!@",
+    "database": "pros",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
