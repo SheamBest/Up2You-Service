@@ -1,0 +1,100 @@
+.saved-service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .saved-service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .saved-service-card h3 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .saved-service-card p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+  }
+  
+  .saved-service-card a {
+    font-size: 16px;
+    color: #6a1b9a;
+    text-decoration: none;
+  }
+  
+  .saved-service-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .tag-badge {
+    display: inline-block;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 12px;
+    padding: 4px 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    width: fit-content;
+  }
+  
+  .select-tag {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .save-button {
+    background-color: #43a047;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .detach-button {
+    background-color: #ffa726;
+    color: white;
+  }
+  
+  .detach-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  .delete-button {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c62828;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+  }
+  

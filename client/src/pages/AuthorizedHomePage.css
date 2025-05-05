@@ -1,0 +1,36 @@
+body {
+    background-color: #f9f2ec; /* тілесний фон */
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .authorized-home {
+    padding: 40px;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .column h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .service-card, .saved-service-card {
+    margin-bottom: 20px;
+  }
+  

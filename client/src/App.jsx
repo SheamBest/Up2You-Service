@@ -1,25 +1,56 @@
-import Home from './home/Home';
-import Service from './service/service';
-import About from './about_us/adout';
-import Login from './login/login';
-import Register from './templates/Register';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import CatalogPage from './pages/CatalogPage';
+import SavedPage from './pages/SavedPage';
+import TagsPage from './pages/TagsPage';
+import ProfilePage from './pages/ProfilePage';
+import NotFoundPage from './pages/NotFoundPage';
+import HomePage from './pages/HomePage';
+import AuthorizedHomePage from './pages/AuthorizedHomePage';
 
+import PrivateRoute from './components/PrivateRoute';
+import Navbar from './components/Navbar';
 function App() {
   return (
-    <div>
-     <BrowserRouter>
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/registration" element={<Register />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+
+        <Route path="/home" element={
+          <PrivateRoute>
+            <AuthorizedHomePage />
+          </PrivateRoute>
+        } />
+        <Route path="/catalog" element={
+          <PrivateRoute>
+            <CatalogPage />
+          </PrivateRoute>
+        } />
+        <Route path="/saved" element={
+          <PrivateRoute>
+            <SavedPage />
+          </PrivateRoute>
+        } />
+        <Route path="/tags" element={
+          <PrivateRoute>
+            <TagsPage />
+          </PrivateRoute>
+        } />
+        <Route path="/profile" element={
+          <PrivateRoute>
+            <ProfilePage />
+          </PrivateRoute>
+        } />
+
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
-    </div>
+    </>
   );
 }
 

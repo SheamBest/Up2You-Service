@@ -1,0 +1,88 @@
+body {
+    background-color: #f9f2ec;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .home-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login-button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #0d47a1;
+  }
+  
+  .home-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    color: #43a047;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .advantages {
+    text-align: left;
+    font-size: 16px;
+    margin: 0 auto 30px;
+    padding-left: 20px;
+    max-width: 500px;
+  }
+  
+  .advantages li {
+    margin-bottom: 10px;
+  }
+  
+  .register-button {
+    background-color: #43a047;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #388e3c;
+  }
+  
